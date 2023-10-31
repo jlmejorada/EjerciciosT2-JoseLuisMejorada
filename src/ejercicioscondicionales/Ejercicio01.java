@@ -11,6 +11,9 @@ public class Ejercicio01 {
 		//Creamos variables para cada digito
 		int dig1, dig2, dig3, dig4;
 		
+		//Creamos una variable boolean
+		boolean capicua=true;
+		
 		//Creamos una variable escaner
 		Scanner sc = new Scanner(System.in);
 		
@@ -23,14 +26,14 @@ public class Ejercicio01 {
 			
 			//Si es menor o igual que 9 es capicua siempre
 			if (num<=9) {
-				System.out.println(num + " es capicua");
+				capicua=true;
 				
 			//Si es menor o igual que 99 
 			} else if (num<=99) {
 				// y su modulo de 11 es igual a 0, es capicua
 				if ((num%11)==0) {
-					System.out.println(num + " es capicua");
-				} else System.out.println(num + " no es capicua");
+					capicua=true;
+				} else capicua=false;
 				
 			//Si es menor o igual que 999
 			} else if (num<=999) {
@@ -38,8 +41,8 @@ public class Ejercicio01 {
 				dig3=num/100;
 				// y su primer y tercer digito son iguales, es capicua
 				if (dig1==dig3) {
-					System.out.println(num + " es capicua");
-				} else System.out.println(num + " no es capicua");
+					capicua=true;
+				} else capicua=false;
 				
 			//Al ser un numero de 4 cifras
 			} else {
@@ -50,10 +53,15 @@ public class Ejercicio01 {
 				
 				// y empezando por la , su (1 y 4), y (2 y 3) son iguales, es capicua
 				if (dig1==dig4&&dig2==dig3) {
-					System.out.println(num + " es capicua");
-				} else System.out.println(num + " no es capicua");
+					capicua=true;
+				} else capicua=false;
 				
 			}
+			
+			if (capicua) {
+				System.out.println(num + " es capicua");
+			} else System.out.println(num + " no es capicua");
+			
 			
 		} else System.out.println("El número introducido no es correcto");
 		

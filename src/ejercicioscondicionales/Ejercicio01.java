@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class Ejercicio01 {
 
+/*
+ * ENTRADA: -5 | REL. ESPERADO: ERROR | REL. OBTENIDO: ERROR
+ * ENTRADA: 10100 | REL. ESPERADO: ERROR | REL. OBTENIDO: ERROR
+ * ENTRADA: 8 | REL. ESPERADO: CAPICÚA | REL. OBTENIDO: ERROR
+ */
+
 	public static void main(String[] args) {
 		//Creamos una variable para recoger el número
 		int num;
@@ -18,7 +24,7 @@ public class Ejercicio01 {
 		Scanner sc = new Scanner(System.in);
 		
 		//Pedimos el número comprendido entre 0 y 9999 y lo recogemos
-		System.out.println("Dame un número entre 0-9999 y te digo si es capicua");
+		System.out.println("Dame un número entre 0-9999 y te digo si es capicúa");
 		num=sc.nextInt();
 		
 		//Nos aseguramos de que el número esté en el rango
@@ -59,8 +65,8 @@ public class Ejercicio01 {
 			}
 			
 			if (capicua) {
-				System.out.println(num + " es capicua");
-			} else System.out.println(num + " no es capicua");
+				System.out.println(num + " es capicúa");
+			} else System.out.println(num + " no es capicúa");
 			
 			
 		} else System.out.println("El número introducido no es correcto");

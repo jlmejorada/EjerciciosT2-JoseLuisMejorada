@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Ejercicio02 {
 
+	/*PRUEBA
+	introducimos 
+	
+	*/
 	public static void main(String[] args) {
 		// Creamos una variable para almacenar el número y otra para la letra
 		int num;
@@ -15,6 +19,9 @@ public class Ejercicio02 {
 		//Pedimos y guardamos el número de DNI
 		System.out.println("Dame tu DNI sin letra");
 		num = sc.nextInt();
+		
+		//Hacemos un if que compruebe que el número introducido es de 8 cifras y positivo
+		if (num>999999999||num<=99999999) {
 		
 		//Creamos un switch que mire el modulo de 23 y le introduzca la letra oportuna
 		letra = switch (num%23) {
@@ -45,6 +52,7 @@ public class Ejercicio02 {
 		};
 		
 		System.out.println("Tu DNI es " + num + letra);
+		} else System.out.println("No es un número valido");
 		
 		//Cerramos el escaner
 		sc.close();

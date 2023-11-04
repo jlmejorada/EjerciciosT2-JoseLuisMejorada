@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Ejercicio04 {
 	/*
-	 * ENTRADA: comidaTotal=0 comidaAnimal=3 nAnimal=4 | REL. ESPERADO: ERROR | REL. OBTENIDO: ERROR
-	 * ENTRADA: comidaTotal=12 comidaAnimal=0 nAnimal=4 | REL. ESPERADO: ERROR | REL. OBTENIDO: ERROR
-	 * ENTRADA: comidaTotal=12 comidaAnimal=3 nAnimal=0 | REL. ESPERADO: ERROR | REL. OBTENIDO: ERROR
-	 * ENTRADA: comidaTotal=12 comidaAnimal=0 nAnimal=0 | REL. ESPERADO: HAS COMPRADO 12KG | REL. OBTENIDO: HAS COMPRADO 12KG
-	 * ENTRADA: comidaTotal=12 comidaAnimal=3 nAnimal=4 | REL. ESPERADO: CANTIDAD JUSTA | REL. OBTENIDO: CANTIDAD JUSTA
-	 * ENTRADA: comidaTotal=12 comidaAnimal=4 nAnimal=2 | REL. ESPERADO: SOBRA 2KG | REL. OBTENIDO: SOBRA 2KG
-	 * ENTRADA: comidaTotal=12 comidaAnimal=5 nAnimal=4 | REL. ESPERADO: SOBRA 2KG | REL. OBTENIDO: FALTA 2KG
+	 * ENTRADA: numObtenido=123 | REL. ESPERADO: ERROR | REL. OBTENIDO: ERROR
+	 * ENTRADA: numObtenido=2 | REL. ESPERADO: dos | REL. OBTENIDO: dos
+	 * ENTRADA: numObtenido=12 | REL. ESPERADO: doce | REL. OBTENIDO: doce
+	 * ENTRADA: numObtenido=18 | REL. ESPERADO: dieciocho | REL. OBTENIDO: dieciocho
+	 * ENTRADA: numObtenido=30 | REL. ESPERADO: treinta | REL. OBTENIDO: treinta
+	 * ENTRADA: numObtenido=38 | REL. ESPERADO: treinta y ocho | REL. OBTENIDO: treinta y ocho
+	 * ENTRADA: numObtenido=72 | REL. ESPERADO: setenta y dos | REL. OBTENIDO: setenta y dos
 	 */
 	public static void main(String[] args) {
 		// Creamos una variable para almacenar el número entero y las dos cifras

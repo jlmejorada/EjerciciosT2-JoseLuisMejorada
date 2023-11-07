@@ -27,6 +27,9 @@ public class Ejercicio01 {
 		System.out.println("Dame los segundos a incrementar");
 		incremento=sc.nextInt();
 		
+		// Comprobamos que nos hayan metido el tiempo dentro de los rangos necesarios 
+		if ((horas<=23 && horas>=1)&&(minutos<=59 && minutos>=1)&&(segundos<=59 && segundos>=1)&&incremento>0) {
+		
 		for (int i=1;i<=incremento;i++) {
 			segundos++;
 		}
@@ -48,7 +51,8 @@ public class Ejercicio01 {
 		if (horas>=24) {
 			horas%=24;
 		}
-				
+		} else System.out.println("Las horas, minutos, segundos o el incremento, no estan introducidos correctamente");
+		
 		//Mostramos la hora modificada
 		System.out.println(horas + ":" + minutos + ":" + segundos);
 		

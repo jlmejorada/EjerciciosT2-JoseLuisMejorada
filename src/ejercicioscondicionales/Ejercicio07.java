@@ -49,7 +49,7 @@ public class Ejercicio07 {
 		if (horas==24) {
 			horas-=24;
 		}
-		}
+		}else System.out.println("Las horas, minutos, segundos o el incremento, no estan introducidos correctamente");
 		
 		//Mostramos la hora modificada
 		System.out.println(horas + ":" + minutos + ":" + segundos);

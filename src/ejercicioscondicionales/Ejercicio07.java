@@ -27,6 +27,8 @@ public class Ejercicio07 {
 		System.out.println("Segundos");
 		segundos=sc.nextInt();
 		
+		// Comprobamos que nos hayan metido el tiempo dentro de los rangos necesarios 
+		if ((horas<=23 && horas>=1)&&(minutos<=59 && minutos>=1)&&(segundos<=59 && segundos>=1)) {
 		// Le sumamos un segundo
 		segundos++;
 		
@@ -46,6 +48,7 @@ public class Ejercicio07 {
 		// Comprobamos que las horas no hayan llegado a 24
 		if (horas==24) {
 			horas-=24;
+		}
 		}
 		
 		//Mostramos la hora modificada

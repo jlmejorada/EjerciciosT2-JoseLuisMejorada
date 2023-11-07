@@ -3,7 +3,14 @@ package ejerciciosbucles;
 import java.util.Scanner;
 
 public class Ejercicio01 {
-
+	/*
+	 * ENTRADA: hora=24 | REL. ESPERADO: ERROR | REL. OBTENIDO: ERROR
+	 * ENTRADA: minutos=64 | REL. ESPERADO: ERROR | REL. OBTENIDO: ERROR
+	 * ENTRADA: segundos=72 | REL. ESPERADO: ERROR | REL. OBTENIDO: ERROR
+	 * ENTRADA: incremento=-6 | REL. ESPERADO: ERROR | REL. OBTENIDO: ERROR
+	 * ENTRADA: hora=23 minutos=50 segundos=37 incremento=2173 | REL. ESPERADO: 0:26:50 | REL. OBTENIDO: 0:26:50
+	 * ENTRADA: hora=12 minutos=35 segundos=59 incremento=23 | REL. ESPERADO: 12:36:22 | REL. OBTENIDO: 12:36:22
+	 */
 	public static void main(String[] args) {
 		// Creamos una variable para las horas, minutos, segundos y el incremento
 		int horas, minutos, segundos, incremento;

@@ -32,25 +32,20 @@ public class Ejercicio01 {
 		
 		for (int i=1;i<=incremento;i++) {
 			segundos++;
+			// Comprobamos que no hayan llegado a 60 segundos			
+			if (segundos>=60) {
+				minutos++;
+				segundos=0;
+			// Comprobamos que los minutos no hayan llegado a 60
+			} else if (minutos>=60) {
+				horas++;
+				minutos=0;	
+			// Comprobamos que las horas no hayan llegado a 24
+			} else if (horas>=24) {
+				horas =0;
+			}
 		}
 		
-		// Comprobamos que no hayan llegado a 60 segundos
-		if (segundos>=60) {
-			// Le quitamos 60 segundos y sumamos un minuto
-			minutos+=(segundos/60);
-			segundos%=60;
-			}
-				
-		// Comprobamos que los minutos no hayan llegado a 60
-		if (minutos>=60) {
-			// Le quitamos 60 segundos y sumamos un minuto
-			horas+=(minutos/60);
-			minutos%=60;
-		}
-		// Comprobamos que las horas no hayan llegado a 24
-		if (horas>=24) {
-			horas%=24;
-		}
 		} else System.out.println("Las horas, minutos, segundos o el incremento, no estan introducidos correctamente");
 		
 		//Mostramos la hora modificada

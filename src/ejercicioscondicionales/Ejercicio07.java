@@ -33,19 +33,23 @@ public class Ejercicio07 {
 		// Comprobamos que no hayan llegado a 60 segundos
 		if (segundos==60) {
 			// Le quitamos 60 segundos y sumamos un minuto
-			segundos=segundos-60;
+			segundos-=60;
 			minutos++;
 		}
 		
 		// Comprobamos que los minutos no hayan llegado a 60
 		if (minutos==60) {
 			// Le quitamos 60 segundos y sumamos un minuto
-			minutos=minutos-60;
+			minutos-=60;
 			horas++;
+		}
+		// Comprobamos que las horas no hayan llegado a 24
+		if (horas==24) {
+			horas-=24;
 		}
 		
 		//Mostramos la hora modificada
-		System.out.println(horas + " horas, " + minutos + " minutos, " + segundos + " segundos");
+		System.out.println(horas + ":" + minutos + ":" + segundos);
 		
 		// Cerramos el escaner
 		sc.close();

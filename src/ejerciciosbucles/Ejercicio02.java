@@ -22,6 +22,8 @@ public class Ejercicio02 {
 		
 		//Comprobamos que nos han introducido un número valido
 		do {
+
+			// Comprobamos que no nos han introducido texto
 			try {
 				//Pedimos el número hasta el que buscará primos
 				System.out.println("Dame un número y te buscare números primos hasta él (tiene que ser positivo)");

@@ -1,5 +1,6 @@
 package ejerciciosbucles;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio01 {
@@ -8,34 +9,68 @@ public class Ejercicio01 {
 	 * ENTRADA: minutos=64 | REL. ESPERADO: ERROR | REL. OBTENIDO: ERROR
 	 * ENTRADA: segundos=72 | REL. ESPERADO: ERROR | REL. OBTENIDO: ERROR
 	 * ENTRADA: incremento=-6 | REL. ESPERADO: ERROR | REL. OBTENIDO: ERROR
+	 * ENTRADA: hora=minuto=segundo=incremento="texto" | REL. ESPERADO: ERROR | REL. OBTENIDO: ERROR
 	 * ENTRADA: hora=23 minutos=50 segundos=37 incremento=2173 | REL. ESPERADO: 0:26:50 | REL. OBTENIDO: 0:26:50
 	 * ENTRADA: hora=12 minutos=35 segundos=59 incremento=23 | REL. ESPERADO: 12:36:22 | REL. OBTENIDO: 12:36:22
 	 */
 	public static void main(String[] args) {
 		// Creamos una variable para las horas, minutos, segundos y el incremento
-		int horas, minutos, segundos, incremento;
+		int horas=-1, minutos=-1, segundos=-1, incremento=-1;
 		
 		//Creamos un escaner
 		Scanner sc = new Scanner(System.in);
 		
-		//Pedimos las horas y registramos
-		System.out.println("Dame el número de horas");
-		horas=sc.nextInt();
+		//Con este bucle nos aseguramos que el número introducido está en el rango
+		do {
+			try {
+			//Pedimos las horas y registramos
+			System.out.println("Dame el número de horas (entre 0 y 23)");
+			horas=sc.nextInt();
+			//Si la hora introducida es un String salta un error
+			} catch (InputMismatchException e) {
+				System.out.println("Solo se pueden introducir caracteres númericos");
+				sc.nextLine();
+			}
+		} while (horas<0||horas>23);
 		
-		//Pedimos los minutos y registramos
-		System.out.println("Dame el número de minutos");
-		minutos=sc.nextInt();
+		//Con este bucle nos aseguramos que el número introducido está en el rango
+		do {
+			try {
+			//Pedimos los minutos y registramos
+			System.out.println("Dame el número de minutos (entre 0 y 59)");
+			minutos=sc.nextInt();
+			//Si los minutos introducidos es un String salta un error
+			} catch (InputMismatchException e) {
+				System.out.println("Solo se pueden introducir caracteres númericos");
+				sc.nextLine();
+			}
+		} while (minutos<0||minutos>59);
 		
-		//Pedimos los segundos y registramos
-		System.out.println("Dame el número de segundos");
-		segundos=sc.nextInt();
+		//Con este bucle nos aseguramos que el número introducido está en el rango
+		do {
+			try {
+			//Pedimos los segundos y registramos
+			System.out.println("Dame el número de segundos (entre 0 y 59)");
+			segundos=sc.nextInt();
+			//Si los segundos introducidos es un String salta un error
+			} catch (InputMismatchException e) {
+				System.out.println("Solo se pueden introducir caracteres númericos");
+				sc.nextLine();
+			}
+		} while (segundos<0||segundos>59);
 		
-		//Pedimos los segundos a incrementar y registramos
-		System.out.println("Dame los segundos a incrementar");
-		incremento=sc.nextInt();
-		
-		// Comprobamos que nos hayan metido el tiempo dentro de los rangos necesarios 
-		if ((horas<=23 && horas>=1)&&(minutos<=59 && minutos>=1)&&(segundos<=59 && segundos>=1)&&incremento>0) {
+		//Con este bucle nos aseguramos que el número introducido está en el rango
+		do {
+			try {
+			//Pedimos el incremento y registramos
+			System.out.println("Dame el incremento de segundos (tiene que ser positivo)");
+			incremento=sc.nextInt();
+			//Si el incremento es un String salta un error
+			} catch (InputMismatchException e) {
+				System.out.println("Solo se pueden introducir caracteres númericos");
+				sc.nextLine();
+			}
+		} while (incremento<0);
 		
 		for (int i=1;i<=incremento;i++) {
 			segundos++;
@@ -52,8 +87,6 @@ public class Ejercicio01 {
 				horas =0;
 			}
 		}
-		
-		} else System.out.println("Las horas, minutos, segundos o el incremento, no estan introducidos correctamente");
 		
 		//Mostramos la hora modificada
 		System.out.println(horas + ":" + minutos + ":" + segundos);

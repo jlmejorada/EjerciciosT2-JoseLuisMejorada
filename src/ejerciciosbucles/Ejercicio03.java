@@ -4,7 +4,20 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio03 {
-
+	/* 
+	 * ENTRADA: 0   | RES. ESPERADO: error | RES. OBTENIDO: error
+	 * ENTRADA: -8  | RES. ESPERADO: error | RES. OBTENIDO: error
+	 * ENTRADA: tres | RES. ESPERADO: rrror | RES. OBTENIDO: error             
+	 * ENTRADA: 4   | RES. ESPERADO:  *   | RES. OBTENIDO: *
+	 *                               * *                  * *
+	 *                              * * *                * * *
+	 *                             * * * *              * * * *
+	 * ENTRADA: 5   | RES. ESPERADO:  *   | RES. OBTENIDO: *
+	 *                               * *                  * *
+	 *                              * * *                * * *
+	 *                             * * * *              * * * *
+	 *                            * * * * *            * * * * *
+	 */
 	public static void main(String[] args) {
 		// Creamos una variable para el número de la base de la piramide y otra para los espacios
 		int base=-1;
@@ -27,10 +40,15 @@ public class Ejercicio03 {
 		
 		//Creamos un bucle que salte cada linea
 		for (int i=1;i<=base;i++) {
-			
-			if () {
-				
+			for (int j=1;j<=(base-i);j++) {
+				System.out.print(" ");
 			}
+			
+			for (int j=1;j<=i;j++) {
+				System.out.print("* ");
+			}
+			
+			System.out.println();		
 		};
 		
 		//Cerramos el escaner

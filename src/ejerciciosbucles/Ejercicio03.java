@@ -33,7 +33,7 @@ public class Ejercicio03 {
 				System.out.println("Dame el número de * que tendra la base del triangulo (tiene que ser positivo)");
 				base=sc.nextInt();
 			}catch(InputMismatchException e) {
-				System.out.println("Solo puede introducir números");
+				System.out.println("El tipo de dato introducido no es correcto");
 				sc.nextLine();
 			}
 		} while (base<0);

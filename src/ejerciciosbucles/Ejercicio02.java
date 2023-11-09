@@ -29,7 +29,7 @@ public class Ejercicio02 {
 				System.out.println("Dame un número y te buscare números primos hasta él (tiene que ser positivo)");
 				num=sc.nextInt();
 			} catch(InputMismatchException e) {
-				System.out.println("Solo se pueden introducir caracteres númericos");
+				System.out.println("El tipo de dato introducido no es correcto");
 				sc.nextLine();
 			}
 		} while (num<0);

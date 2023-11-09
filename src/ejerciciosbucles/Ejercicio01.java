@@ -28,7 +28,7 @@ public class Ejercicio01 {
 			horas=sc.nextInt();
 			//Si la hora introducida es un String salta un error
 			} catch (InputMismatchException e) {
-				System.out.println("Solo se pueden introducir caracteres númericos");
+				System.out.println("El tipo de dato introducido no es correcto");
 				sc.nextLine();
 			}
 		} while (horas<0||horas>23);
@@ -41,7 +41,7 @@ public class Ejercicio01 {
 			minutos=sc.nextInt();
 			//Si los minutos introducidos es un String salta un error
 			} catch (InputMismatchException e) {
-				System.out.println("Solo se pueden introducir caracteres númericos");
+				System.out.println("El tipo de dato introducido no es correcto");
 				sc.nextLine();
 			}
 		} while (minutos<0||minutos>59);

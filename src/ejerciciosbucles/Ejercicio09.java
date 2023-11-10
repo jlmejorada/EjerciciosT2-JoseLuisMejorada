@@ -4,7 +4,11 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio09 {
-
+	/* 
+	 * ENTRADA: -2   | RES. ESPERADO: error | RES. OBTENIDO: error
+	 * ENTRADA: cuatro | RES. ESPERADO: error   | RES. OBTENIDO: error   
+	 * ENTRADA: 3234234 | RES. ESPERADO: 7 | RES. OBTENIDO: 7
+	 */
 	public static void main(String[] args) {
 		// Creamos una variable para el contador y otra para el número introducido
 		int contador=0, num=0;
@@ -34,7 +38,7 @@ public class Ejercicio09 {
 		}
 		
 		//Decimos el número de caracteres del número
-		System.out.println("El número tenia " +  " cifras");
+		System.out.println("El número tenia " + contador + " cifras");
 		
 		//Cerramos el escaner
 		sc.close();

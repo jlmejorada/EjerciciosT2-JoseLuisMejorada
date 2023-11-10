@@ -28,7 +28,7 @@ public class Ejercicio07 {
 		
 		//Comprobamos que el número este en el rango correcto
 		do {
-			// Comprobamos que no nos han introducido texto
+			// Comprobamos que no nos han introducido otro tipo de caracter
 			try {
 				//Pedimos el número de la base del triangulo
 				System.out.println("Dame el número de números que tendra la base del triangulo (tiene que estar entre 0 y 20)");

@@ -36,7 +36,7 @@ public class Ejercicio03 {
 				System.out.println("El tipo de dato introducido no es correcto");
 				sc.nextLine();
 			}
-		} while (base<0);
+		} while (base<=0);
 		
 		//Creamos un bucle que salte cada linea
 		for (int i=1;i<=base;i++) {

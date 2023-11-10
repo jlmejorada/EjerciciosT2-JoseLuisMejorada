@@ -4,7 +4,12 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Ejercicio08 {
-
+	/* 
+	 * ENTRADA: 0   | RES. ESPERADO:  | RES. OBTENIDO: 
+	 * ENTRADA: -2 1 5 7 2938 0 | RES. ESPERADO: nªintroducidos: 5 fallos:0 | RES. OBTENIDO: nªintroducidos: 5 fallos:0 
+	 * ENTRADA: cuatro | RES. ESPERADO: error   | RES. OBTENIDO: error             
+	 * ENTRADA: -2 1 5 -2 8 6 10 0 | RES. ESPERADO: nªintroducidos:7 fallos:1 | RES. OBTENIDO:  nªintroducidos:7 fallos:1 
+	 */
 	public static void main(String[] args) {
 		// Creamos una variable para contar los números introducidos y de estos, los fallados
 		int introducidos=1, fallados=0;

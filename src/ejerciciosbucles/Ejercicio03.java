@@ -19,7 +19,7 @@ public class Ejercicio03 {
 	 *                            * * * * *            * * * * *
 	 */
 	public static void main(String[] args) {
-		// Creamos una variable para el número de la base de la piramide y otra para los espacios
+		// Creamos una variable para el número de la base de la piramide
 		int base=-1;
 		
 		//Creamos el escaner
